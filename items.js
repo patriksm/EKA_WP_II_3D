@@ -11,7 +11,7 @@ function createItems(){
         let newElement = document.createElement("div");
         newElement.style.position = "absolute";
         if (items[i][9] == "circle") {
-            newElement.className = "circle";
+            newElement.className = "circle";s
             newElement.style.width = items[i][6]*2 + "px";
             newElement.style.height = items[i][6]*2 + "px"; 
             if (items[i][7] == null) {
