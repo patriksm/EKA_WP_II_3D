@@ -54,18 +54,18 @@ document.addEventListener("keydown", (event) => {
     onGround = false;
   }
   if (event.key == "1") {
-    location.reload();
     CreateNewWorld(map);
+    location.reload();
     createItems();
   }
   if (event.key == "2") {
-    location.reload();
     CreateNewWorld(mapMikhail);
+    location.reload();
     createItems();
   }
   if (event.key == "3") {
-    location.reload();
     CreateNewWorld(mapAdheeksha);
+    location.reload();
     createItems();
 }});
 
