@@ -53,7 +53,21 @@ document.addEventListener("keydown", (event) => {
     PressUp = 5;
     onGround = false;
   }
-});
+  if (event.key == "1") {
+    CreateNewWorld(map);
+    location.reload();
+    createItems();
+  }
+  if (event.key == "2") {
+    CreateNewWorld(mapMikhail);
+    location.reload();
+    createItems();
+  }
+  if (event.key == "3") {
+    CreateNewWorld(mapAdheeksha);
+    location.reload();
+    createItems();
+}});
 
 document.addEventListener("keyup", (event) => {
   if (event.key == "a") {
