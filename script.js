@@ -4,7 +4,7 @@ var collectedItemCount = 0;
 var collectionSound = new Audio("collect.mp3");
 
 //maps available = mapMikhail, mapAdheeksha, map
-var currentMap = mapMikhail;
+var currentMap = mapAdheeksha;
 
 function player(x, y, z, rx, ry) {
   this.x = x;
@@ -53,7 +53,21 @@ document.addEventListener("keydown", (event) => {
     PressUp = 5;
     onGround = false;
   }
-});
+  if (event.key == "1") {
+    location.reload();
+    CreateNewWorld(map);
+    createItems();
+  }
+  if (event.key == "2") {
+    location.reload();
+    CreateNewWorld(mapMikhail);
+    createItems();
+  }
+  if (event.key == "3") {
+    location.reload();
+    CreateNewWorld(mapAdheeksha);
+    createItems();
+}});
 
 document.addEventListener("keyup", (event) => {
   if (event.key == "a") {
